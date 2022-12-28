@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="userlogin.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="login-wrap">
+	<div class="login-html">
+		<form action="../adminlogin/userlogin.php" method="post">
+					<div class="group">
+						<div class="alert alert-warning alert-dismissible fade show" role="alert">
+					  		<strong>Invalid Username and Password!</strong><br> Please input valid details on fields below.
+					  		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					   		 <span aria-hidden="true">&times;</span>
+					  		</button>
+						</div>
+			<label for="tab-1" class="tab">Sign In</label>
+			<div class="login-form">
+				<div class="sign-in-htm">
+					<div class="group">
+						<label for="user" class="label">username</label>
+						<input id="user" maxlength="15" minlength="5" type="text" class="input" name="user" required>
+
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" type="password" class="input" data-type="password" name="pass" required>
+					</div>
+
+						<button type="submit" class="btnn" value="Sign In">Sign In</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<script type="text/javascript">
+	$('.alert').alert()
+
+</script>
+</body>
+</html>
